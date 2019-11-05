@@ -33,7 +33,7 @@ unzip("eurofxref-hist.zip")
 eur <- read.csv("eurofxref-hist.csv")
 # Filter only dates from this year
 eur2 <- subset(eur,substr(Date,1,4)>=year(now()))
-# Filter only dates from this month
+# Filter only dates from this month (and previous)
 eur3 <- subset(eur2,month(Date)>=month(now())-1)
 # Plot the data using ggplot
 ggplot(eur3, aes(y=USD, x=Date)) + geom_point()
