@@ -68,6 +68,12 @@ eur3 \<- subset(eur2,month(Date)\>=month(now())-1)
 ggplot(eur3, aes(y=USD, x=Date)) +
 geom\_point()
 
+dev.copy(png,‘Rplot.png’)
+
+dev.off()
+
+![Plot](Rplot.png)
+
 # \# End the document with a code chunk containing sessionInfo()
 
 # \# (see end of this document), informing the reader what versions of R and packages you are using.
