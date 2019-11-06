@@ -3,23 +3,28 @@ HW1
 Josef Hemmingsson
 November 6, 2019
 
-# \# Place the document option output: github\_document in the header,
+# \# 1. Create a subdirectory HW1 in your Homework directory.
+
+# Done, as where this document is located
+
+setwd(“<sub>/Homework") dir.create("HW1")
+setwd("</sub>/Homework/HW1”)
+
+# \# 2. Write an R Markdown document called HW1.Rmd in HW1, this should contain
+
+# \# \# the document option output: github\_document in the header,
+
+# Done, see header in the source code
 
 # Install packages
 
 install.packages(“rlang”) install.packages(“ggplot2”)
 install.packages(“lubridate”) install.packages(“rmarkdown”)
 install.packages(“knitr”) library(rlang) library(ggplot2)
-library(lubridate) library(rmarkdown) library(knitr)
+library(lubridate) library(rmarkdown)
+library(knitr)
 
-# Define working directory and create folders
-
-setwd(“<sub>/Homework") dir.create("HW1")
-setwd("</sub>/Homework/HW1”)
-
-# \# a brief description of your past experiences, if any,
-
-# \# of using R, RStudio, R Markdown, Git, Github, ggplot2 and dplyr,;
+# \# \# a brief description of your past experiences, if any, of using R, RStudio, R Markdown, Git, Github, ggplot2 and dplyr,;
 
 # Limited experience.
 
@@ -27,11 +32,7 @@ setwd("</sub>/Homework/HW1”)
 
 # Mainly coded in SAS and VBA in the last 10 years
 
-# \# a plot, using ggplot, of some aspect of a data-set. The data-set should be found on the web
-
-# \# (i.e. not one that is preloaded in R or in some package)
-
-# \# and you should document any steps taken in retrieving the data.
+# \# \# a plot, using ggplot, of some aspect of a data-set. The data-set should be found on the web (i.e. not one that is preloaded in R or in some package) and you should document any steps taken in retrieving the data.
 
 # Define the URL for the data (URL to the ZIP file online)
 
@@ -74,9 +75,7 @@ dev.off()
 
 ![Plot](Rplot.png)
 
-# \# End the document with a code chunk containing sessionInfo()
-
-# \# (see end of this document), informing the reader what versions of R and packages you are using.
+# \# \# End the document with a code chunk containing sessionInfo() (see end of this document), informing the reader what versions of R and packages you are using.
 
 sessionInfo()
 
