@@ -49,8 +49,9 @@ download.file(url, destfile)
 
 # Unzip the file…
 
-unzip(“eurofxref-hist.zip”) \# …and we will then have a CSV file in the
-directory
+unzip(“eurofxref-hist.zip”)
+
+# …and we will then have a CSV file in the directory
 
 # Import the CSV file to a dataset in R
 
